@@ -37,6 +37,7 @@ GNOME Builder.
 %package libs
 Summary:	D-Spy shared library
 Summary(pl.UTF-8):	Biblioteka współdzielona D-Spy
+License:	LGPL v3+
 Group:		Libraries
 Requires:	glib2 >= 1:2.68
 Requires:	gtk4 >= 4.2
@@ -51,6 +52,7 @@ Biblioteka współdzielona D-Spy.
 %package devel
 Summary:	Header files for D-Spy library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki D-Spy
+License:	LGPL v3+
 Group:		Development/Libraries
 Requires:	%{name}-libs = %{version}-%{release}
 Requires:	glib2-devel >= 1:2.68
@@ -65,6 +67,7 @@ Pliki nagłówkowe biblioteki D-Spy.
 %package static
 Summary:	D-Spy static library
 Summary(pl.UTF-8):	Biblioteka statyczna D-Spy
+License:	LGPL v3+
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
