@@ -1,15 +1,16 @@
+# TODO: use gtk4-update-icon-cache
 Summary:	Explore the D-Bus
 Summary(pl.UTF-8):	Eksplorator szyny D-Bus
 Name:		dspy
-Version:	1.0.0
+Version:	1.2.0
 Release:	1
 License:	GPL v3+
 Group:		Development/Tools
-Source0:	https://download.gnome.org/sources/dspy/1.0/%{name}-%{version}.tar.xz
-# Source0-md5:	09f3cd52ff0045ceea746501b09f1532
+Source0:	https://download.gnome.org/sources/dspy/1.2/%{name}-%{version}.tar.xz
+# Source0-md5:	6353ae1fdd82cc44c7913d1c2ab1bd97
 URL:		https://gitlab.gnome.org/GNOME/d-spy
 BuildRequires:	glib2-devel >= 1:2.68
-BuildRequires:	gtk4-devel >= 4.2
+BuildRequires:	gtk4-devel >= 4.6
 BuildRequires:	libadwaita-devel >= 1.0
 BuildRequires:	meson >= 0.56.0
 BuildRequires:	ninja >= 1.5
@@ -18,7 +19,6 @@ BuildRequires:	rpmbuild(macros) >= 1.736
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 Requires(post,postun):	glib2 >= 1:2.68
-# TODO: use gtk4 variant
 Requires(post,postun):	gtk-update-icon-cache
 Requires:	%{name}-libs = %{version}-%{release}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -40,7 +40,7 @@ Summary(pl.UTF-8):	Biblioteka współdzielona D-Spy
 License:	LGPL v3+
 Group:		Libraries
 Requires:	glib2 >= 1:2.68
-Requires:	gtk4 >= 4.2
+Requires:	gtk4 >= 4.6
 Requires:	libadwaita >= 1.0
 
 %description libs
@@ -56,7 +56,7 @@ License:	LGPL v3+
 Group:		Development/Libraries
 Requires:	%{name}-libs = %{version}-%{release}
 Requires:	glib2-devel >= 1:2.68
-Requires:	gtk4-devel >= 4.2
+Requires:	gtk4-devel >= 4.6
 
 %description devel
 Header files for D-Spy library.
