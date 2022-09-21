@@ -2,17 +2,17 @@
 Summary:	Explore the D-Bus
 Summary(pl.UTF-8):	Eksplorator szyny D-Bus
 Name:		dspy
-Version:	1.2.1
+Version:	1.4.0
 Release:	1
 License:	GPL v3+
 Group:		Development/Tools
-Source0:	https://download.gnome.org/sources/dspy/1.2/%{name}-%{version}.tar.xz
-# Source0-md5:	86cf82235173bb9b5e8ed06dde5aae5b
+Source0:	https://download.gnome.org/sources/d-spy/1.4/d-spy-%{version}.tar.xz
+# Source0-md5:	0f0dce04810d25f0ed9177b2a45215cf
 URL:		https://gitlab.gnome.org/GNOME/d-spy
 BuildRequires:	glib2-devel >= 1:2.68
 BuildRequires:	gtk4-devel >= 4.6
 BuildRequires:	libadwaita-devel >= 1.0
-BuildRequires:	meson >= 0.56.0
+BuildRequires:	meson >= 0.59.0
 BuildRequires:	ninja >= 1.5
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.736
@@ -78,7 +78,7 @@ D-Spy static library.
 Biblioteka statyczna D-Spy.
 
 %prep
-%setup -q
+%setup -q -n d-spy-%{version}
 
 %build
 %meson build
